@@ -76,18 +76,6 @@ jobs:
 
             goarm: 7
 
-          - goos: android
-
-            goarch: arm
-
-            goarm: 6
-
-          - goos: android
-
-            goarch: arm
-
-            goarm: 5
-
           # END Linux ARM 5 6 7
 
 
@@ -103,7 +91,7 @@ jobs:
 
       GOARM: ${{ matrix.goarm }}
 
-      CGO_ENABLED: 0
+      CGO_ENABLED: 1
 
     steps:
 
