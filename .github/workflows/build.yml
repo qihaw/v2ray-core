@@ -69,11 +69,13 @@ jobs:
         include:
 
           # BEGIN Linux ARM 5 6 7
+          
+	        - goos: openbsd
+            goarch: arm
+            goarm: 7
 
           - goos: android
-
             goarch: arm
-
             goarm: 7
 
           # END Linux ARM 5 6 7
@@ -91,7 +93,7 @@ jobs:
 
       GOARM: ${{ matrix.goarm }}
 
-      CGO_ENABLED: 1
+      CGO_ENABLED: 0
 
     steps:
 
