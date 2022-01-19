@@ -18,3 +18,4 @@ jobs:
             p/secrets
           publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
           publishDeployment: 241
+
