@@ -83,7 +83,7 @@ jobs:
 
       fail-fast: false
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     env:
 
@@ -93,11 +93,7 @@ jobs:
 
       GOARM: ${{ matrix.goarm }}
 
-      CGO_ENABLED: 1
-      
-      CC: arm-linux-gnueabi-gcc
-      
-      CXX: arm-linux-gnueabi-g++
+      CGO_ENABLED: 0
 
     steps:
 
