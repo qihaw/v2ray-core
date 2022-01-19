@@ -102,7 +102,7 @@ for arg in "$@"; do
 		GOOS=$arg
 		EXESUFFIX=.exe
 		;;
-	darwin | dragonfly | freebsd | openbsd)
+	darwin | dragonfly | freebsd | openbsd | android)
 		GOOS=$arg
 		;;
 	nodat)
