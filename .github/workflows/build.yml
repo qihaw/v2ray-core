@@ -50,7 +50,7 @@ jobs:
 
         # Include amd64 on all platforms.
 
-        goos: [windows]
+        goos: [android]
 
         goarch: [amd64]
 
@@ -93,7 +93,7 @@ jobs:
 
       GOARM: ${{ matrix.goarm }}
 
-      CGO_ENABLED: 0
+      CGO_ENABLED: 1
 
     steps:
 
