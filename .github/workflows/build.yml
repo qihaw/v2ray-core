@@ -52,7 +52,7 @@ jobs:
 
         goos: [android]
 
-        goarch: [amd64]
+        goarch: [arm]
 
         exclude:
 
@@ -93,7 +93,7 @@ jobs:
 
       GOARM: ${{ matrix.goarm }}
 
-      CGO_ENABLED: 1
+      CGO_ENABLED: 0
 
     steps:
 
